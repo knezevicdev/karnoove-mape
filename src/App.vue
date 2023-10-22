@@ -99,6 +99,11 @@
             class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
             @click="addGroup"
         >Dodaj grupu (pravougaonik)</button>
+        <p class="mt-2" v-if="groups.length > 0">
+          - Kliknite na pravougaonik kako biste ušli u režim crtanja. <br />
+          - Kliknite i povucite preko tabele da biste nacrtali pravougaonik. <br />
+          - Klikom na odabrani pravougaonik izlazite iz režima crtanja.
+        </p>
       </div>
       <div class="top-2">
         <div
